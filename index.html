@@ -1,0 +1,14 @@
+<textarea> id="text"</textarea>
+
+<script>
+
+  const ta = document.querySelector('#text')
+  
+  function newText () {
+    const text = ta.value
+    window.localStorage.setItem('journal-entry', text)
+  }
+  
+  ta.addEventListener('input', newText)
+
+</script>
